@@ -44,7 +44,7 @@ jobs:
           publish_dir: ./_site
           enable_jekyll: true
           # destination_dir: ${{ steps.date.outputs.date }}
-          destination_dir: ${{ github.run_id }}
+          destination_dir: ${{ github.run_number }}
 
       - name: Deploy redirect 🚀
         uses: peaceiris/actions-gh-pages@v3
@@ -52,3 +52,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: redirect
           keep_files: true
+      
+      - name: Update redirect
+        run: sed -i 's/LATEST_VERSION/%{{github.run_number}}/g' index.html
