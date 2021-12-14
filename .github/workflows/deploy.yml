@@ -76,8 +76,8 @@ jobs:
       #replace text with var data in metadata.json
       - name: Update build metadata
         run: |
-          sed -i 's/BUILD_DATETIME/${{steps.date.outputs.date}}/g' ${{github.run_number}}/metadata.json
-          sed -i 's/GIT_SHA/${{github.sha}}/g' ${{github.run_number}}/metadata.json
+          sed -i 's/BUILD_DATETIME/${{steps.date.outputs.date}}/g' ${{github.run_number}}/_data/metadata.json
+          sed -i 's/GIT_SHA/${{github.sha}}/g' ${{github.run_number}}/_data/metadata.json
 
       - name: Commit files # transfer the new html files back into the repository
         run: |

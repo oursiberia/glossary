@@ -7,3 +7,6 @@ Welcome to My Home Page
 
 - Original date - {{ date }}
 - With timeago filter - {{ date | timeago }}
+
+- {{ site.data.metadata.build_date }}
+- {{ site.data.metadata.git_sha }}
