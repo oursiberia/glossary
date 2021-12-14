@@ -36,7 +36,7 @@ jobs:
         run: |
           sed -i 's/BUILD_DATETIME/${{steps.date.outputs.date}}/g' _data/metadata.json
           sed -i 's/GIT_SHA/${{github.sha}}/g' _data/metadata.json
-          sed -i 's/BUILD_NUMBEER/${{github.run_number}}/g' _data/metadata.json
+          sed -i 's/BUILD_NUMBER/${{github.run_number}}/g' _data/metadata.json
 
       # https://github.com/marketplace/actions/jekyll-action
       - name: build
@@ -74,9 +74,12 @@ jobs:
           ref: gh-pages
 
       #update the redirect file in the root of the project to point at the new build
-      - name: Update redirect
+      - name: Update root
         run: |
           sed -i 's/LATEST_VERSION/${{github.run_number}}/g' index.html
+
+      - name: Add build to index
+        run: "- build ${{github.run_number}} >> index.html"
 
       - name: Commit files # transfer the new html files back into the repository
         run: |
