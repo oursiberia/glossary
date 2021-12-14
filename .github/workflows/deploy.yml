@@ -13,7 +13,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           persist-credentials: false
-          
+
       - name: Get current date
         id: date
         run: |
@@ -36,6 +36,7 @@ jobs:
         run: |
           sed -i 's/BUILD_DATETIME/${{steps.date.outputs.date}}/g' _data/metadata.json
           sed -i 's/GIT_SHA/${{github.sha}}/g' _data/metadata.json
+          sed -i 's/BUILD_NUMBEER/${{git.run_number}}/g' _data/metadata.json
 
       # https://github.com/marketplace/actions/jekyll-action
       - name: build
