@@ -37,8 +37,6 @@ jobs:
           # deploy the current public folder
           # to <base url>/x.y.z version subfolder
           publish_dir: ./_site
-          enable_jekyll: true
-          # destination_dir: ${{ steps.date.outputs.date }}
           destination_dir: ${{ github.run_number }}
 
       - name: Deploy redirect 🚀
