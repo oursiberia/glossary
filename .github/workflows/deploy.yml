@@ -43,7 +43,8 @@ jobs:
           # to <base url>/x.y.z version subfolder
           publish_dir: ./_site
           enable_jekyll: true
-          destination_dir: ${{ steps.date.outputs.date }}
+          # destination_dir: ${{ steps.date.outputs.date }}
+          destination_dir: ${{ github.run_id }}
 
       - name: Deploy redirect 🚀
         uses: peaceiris/actions-gh-pages@v3
