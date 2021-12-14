@@ -79,7 +79,7 @@ jobs:
           sed -i 's/LATEST_VERSION/${{github.run_number}}/g' index.html
 
       - name: Add build to index
-        run: "- build ${{github.run_number}} >> index.html"
+        run: echo "- build ${{github.run_number}}" >> index.html
 
       - name: Commit files # transfer the new html files back into the repository
         run: |
