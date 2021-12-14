@@ -52,6 +52,26 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: redirect
           keep_files: true
-      
+  
+  
+  update-redirect:
+    runs-on: ubuntu-latest
+    steps:
+      # https://github.com/actions/checkout
+      - name: Checkout 🛎️
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+          ref: gh-pages
+
       - name: Update redirect
         run: sed -i 's/LATEST_VERSION/%{{github.run_number}}/g' index.html
+
+      - name: Commit files # transfer the new html files back into the repository
+        run: git commit -am "Updating the root redirect to /${{github.run_number}}"
+
+      - name: Push changes # push the output folder to your repo
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          force: true
