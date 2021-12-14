@@ -13,7 +13,13 @@ jobs:
         uses: actions/checkout@v2
         with:
           persist-credentials: false
-      
+          
+      - name: Get current date
+        id: date
+        run: |
+          echo "::set-output name=date::$(date +'%Y-%m-%d-%T')"
+          echo ${{ steps.date.outputs.date }}
+
       # Use GitHub Actions' cache to shorten build times and decrease load on servers
       - name: Cache
         uses: actions/cache@v1
@@ -65,12 +71,6 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
           ref: gh-pages
-
-      - name: Get current date
-        id: date
-        run: |
-          echo "::set-output name=date::$(date +'%Y-%m-%d-%T')"
-          echo ${{ steps.date.outputs.date }}
 
       #update the redirect file in the root of the project to point at the new build
       - name: Update redirect

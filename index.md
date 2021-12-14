@@ -1,12 +1,11 @@
 ---
 ---
 
-Welcome to My Home Page
+### Siberia Glossary
 
-{% assign date = '2020-04-13T10:20:00Z' %}
+{%- comment -%} {% assign date = '2020-04-13T10:20:00Z' %}
 
 - Original date - {{ date }}
-- With timeago filter - {{ date | timeago }}
+- With timeago filter - {{ date | timeago }} {%- endcomment -%}
 
-- {{ site.data.metadata.build_date }}
-- {{ site.data.metadata.git_sha }}
+- Published on {{ site.data.metadata.build_date }} from {{ site.data.metadata.git_sha }} 
