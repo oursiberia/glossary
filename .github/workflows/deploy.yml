@@ -58,6 +58,7 @@ jobs:
   
   update-redirect:
     runs-on: ubuntu-latest
+    needs: deploy
     steps:
       # https://github.com/actions/checkout
       - name: Checkout 🛎️
