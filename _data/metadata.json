@@ -1,4 +1,5 @@
 {
-  "build_date": BUILD_DATETIME,
-  "git_sha": GIT_SHA
+  "build_date": "BUILD_DATETIME",
+  "git_sha": "GIT_SHA",
+  "build_number": "BUILD_NUMBER"
 }
