@@ -1,10 +1,9 @@
 ---
-layout: post
-title:  "Welcome to Jekyll!"
 ---
 
-# Welcome
+Welcome to My Home Page
 
-**Hello world**, this is my first Jekyll blog post.
+{% assign date = '2020-04-13T10:20:00Z' %}
 
-I hope you like it!
+- Original date - {{ date }}
+- With timeago filter - {{ date | timeago }}

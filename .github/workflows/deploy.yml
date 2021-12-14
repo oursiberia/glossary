@@ -17,7 +17,11 @@ jobs:
       - name: Get current date
         id: date
         run: echo "::set-output name=date::$(date +'%Y-%m-%d-%T')"
-      # you probably would do build and test steps here
+      
+      # - name: Build Jekyll
+      #   uses: helaili/jekyll-action@v2
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
 
       # https://github.com/marketplace/actions/github-pages-action
       - name: Deploy 🚀
