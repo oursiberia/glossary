@@ -27,11 +27,12 @@ jobs:
           # deploy the current public folder
           # to <base url>/x.y.z version subfolder
           publish_dir: ./public
+          enable_jekyll: true
           destination_dir: ${{ steps.date.outputs.date }}
 
       - name: Deploy redirect 🚀
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./redirect
+          publish_dir: redirect
           keep_files: true
