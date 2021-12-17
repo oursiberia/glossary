@@ -1,0 +1,128 @@
+[
+  {
+    "term": "Alpha",
+    "part_of_speech": "n",
+    "definition": "a release that includes core functionality, though has not been fully integrated or optimised yet. Audience is the internal team. We’re planning to release an Alpha build in November."
+  },
+  {
+    "term": "Beta",
+    "part_of_speech": "n",
+    "definition": "a release considered to be feature-complete, although some bugs do remain. Audience is the internal team, plus additional QA resources. When the Beta goes live, we’ll hand it to the QA team."
+  },
+  {
+    "term": "Branch",
+    "part_of_speech": "n",
+    "definition": "a contained area in the code repository for developing a specific feature  First, Kelly made a feature branch to hold the new code. "
+  },
+  {
+    "term": "Branch",
+    "part_of_speech": "v",
+    "definition": "the act of creating a branch I’m gonna branch off develop to start the next release. "
+  },
+  {
+    "term": "Build",
+    "part_of_speech": "n",
+    "definition": "the generated digital output of the build process, created using either an IDE or command line scripts, including the installable package, binary, symbols, packaging, and signature Stephen commented “The new build is looking good!”"
+  },
+  {
+    "term": "Build",
+    "part_of_speech": "v",
+    "definition": "to trigger the build process, including any associated compilation, symbolication, packaging, and code signing Let me build the app, I can show you the issue. "
+  },
+  {
+    "term": "Commit",
+    "part_of_speech": "n",
+    "definition": "an individual code check-in, usually consisting of a single feature, enhancement, or bug fix Ben browsed the history of commits, looking for anything that could have caused the issue."
+  },
+  {
+    "term": "Deploy",
+    "part_of_speech": "v",
+    "definition": "To launch a specific version of the code to an environment The plan is to deploy after-hours, to minimize any service disruption."
+  },
+  {
+    "term": "Develop (DEV)",
+    "part_of_speech": "n",
+    "definition": "a sandboxed environment where active development is taking place, either on a server, in the cloud, or in the source repository Right now that feature is in dev, but if all goes well we can promote it and get it in the hands of QA."
+  },
+  {
+    "term": "Environment",
+    "part_of_speech": "n",
+    "definition": "a constellation of services, usually in the cloud, that work together as a unit to run the application for a specific audience Chris spun up a new staging environment."
+  },
+  {
+    "term": "Git",
+    "part_of_speech": "n",
+    "definition": "source control system that enables software engineers to collaborate and release software. Before leaving for the day, Sarah committed her code to the Git repository."
+  },
+  {
+    "term": "Local",
+    "part_of_speech": "n",
+    "definition": "a personal computer for development, usually a Mac or PC, where an engineer writes and tests their code before committing it to the origin repository It’s working in my local, but I want to clean it up a little bit before I push."
+  },
+  {
+    "term": "Merge",
+    "part_of_speech": "v",
+    "definition": "to move code from one branch to another.",
+    "example":"Once we merge the release branch, it’ll kick off the deploy process, and a few minutes later, we’ll be live!"
+  },
+  {
+    "term": "Production (PROD)",
+    "part_of_speech": "n",
+    "definition": "the live, public environment, which the general public will use. It’s still a mystery why it worked in Stage, but not Prod."
+  },
+  {
+    "term": "Push",
+    "part_of_speech": "v",
+    "definition": "to upload code from a local repository to a remote repository Almost done, let me run one more test and then I’ll push."
+  },
+  {
+    "term": "Pull Request (PR)",
+    "part_of_speech": "n",
+    "definition": "a formal submission to the code base: after completing a feature, an engineer submits a pull request to their supervisor, containing the source and destination branches of a merge I already submitted a PR for that, so you should be able to see it in the next build."
+  },
+  {
+    "term": "Quality Assurance (QA)",
+    "part_of_speech": "n",
+    "definition": "the act of, or team that performs, thorough testing of the app - usually a dedicated team or development phase I can’t wait to see the QA findings."
+  },
+  {
+    "term": "Remote (origin)",
+    "part_of_speech": "n",
+    "definition": "a repository in the cloud for code, usually the “single source of truth” for the codebase - the opposite of local I finished that bug fix and pushed it to origin."
+  },
+  {
+    "term": "Repository (Repo)",
+    "part_of_speech": "n",
+    "definition": "a digital vault for storing code Dominic downloaded the latest assets from the Git repository."
+  },
+  {
+    "term": "Sign (Signature, Code Sign)",
+    "part_of_speech": "n",
+    "definition": "a cryptographic receipt that verifies the identity of the publisher. The final step before publishing to iTunes is to code sign the app. "
+  },
+  {
+    "term": "Stage (STG)",
+    "part_of_speech": "n",
+    "definition": "a sandboxed environment that’s home to a pre-production version of the code, where a Release Candidate undergoes thorough quality assurance Geraldine is about to do a load test in Stage of 5,000 concurrent users."
+  },
+  {
+    "term": "Test (TEST)",
+    "part_of_speech": "n",
+    "definition": "a sandboxed environment where active development is taking place, full of the latest features that haven’t been fully vetted to promote to a higher environment Test is a bit of a hard-hat zone. "
+  },
+  {
+    "term": "Release Candidate (RC)",
+    "part_of_speech": "n",
+    "definition": "a consumer-ready build, ready for deployment to the public Internet and/or submission to the respective App Stores Once we fix a couple minor remaining issues, we’ll have a viable RC."
+  },
+  {
+    "term": "General Availability (GA)",
+    "part_of_speech": "n",
+    "definition": "The product is available to the general public Once we go to GA, the app will be available for anybody to download. "
+  },
+  {
+    "term": "Golden Master (GM)",
+    "part_of_speech": "n",
+    "definition": "The compiled binary and all associated build products, tagged with a version number (1.0, 1.1, etc.), that will serve as the version that goes to consumers. We need to hand off the GM to Google by this Thursday EOD. "
+  }
+]
