@@ -2,12 +2,13 @@ body {
 	font-family: "Source Sans Pro", sans-serif;
 	padding: 0;
 	margin: 0;
-	font-size: 18px;
+	font-size: 14px;
 	background: #1D1D1D;
 }
 
 p {
 	line-height: 1.6em;
+	margin: 0;
 }
 
 a {
@@ -30,8 +31,8 @@ h2 {
 }
 
 h3 {
-	font-size: 1.4em;
-	margin: 15px 0;
+	margin: 0
+
 }
 
 img {
@@ -90,13 +91,15 @@ nav.main-nav ul {
 	float: right;
 }
 
-nav.main-nav li,
-nav.main-nav a {
-	display: inline-block;
+ul {
+	padding:0;
+	margin: 0;
+	list-style: none;
 }
 
-nav.main-nav li a {
-	padding: 10px;
+li.term {
+	padding: 0;
+	margin: 15px 0;
 }
 
 div.content {
@@ -163,26 +166,6 @@ p.sub-text {
 	margin: 30px 0;
 }
 
-.comment h4 {
-	padding: 0;
-	margin: 0;
-	position: absolute;
-	top: 40px;
-	left: 143px;
-}
-
-.comment span.date {
-	position: absolute;
-	top: 64px;
-	left: 142px;
-}
-
-.comment .profile-image img {
-	width: 80px;
-	height: 80px;
-	border-radius: 100px;
-}
-
 hr {
 	border: 1px solid #eee;
 	margin: 60px 0;
@@ -192,9 +175,10 @@ textarea,
 input[type="text"] {
 	width: 100%;
 	padding: 10px;
-	font-size: 18px;
+	font-size: 12px;
 	display: block;
-	box-sizing: padding-box;
+	box-sizing: border-box;
+	width: 75%;
 }
 
 textarea {
@@ -211,7 +195,7 @@ label {
 
 input[type="submit"] {
 	margin: 30px 0 0 0;
-	font-size: 20px;
+	font-size: 12px;
 }
 
 .search {

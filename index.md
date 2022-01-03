@@ -14,7 +14,7 @@ layout: default
 <ul id="terms">
 {% assign terms = site.data.terms | sort: "term" %}
 {% for termData in terms %}
-  <li id="{{termData.term | slugify }}">
+  <li id="{{termData.term | slugify }}" class="term">
     <h3 >
       {{termData.term}} 
       ({{termData.part_of_speech}})
